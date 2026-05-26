@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bce8vjhsfkjh4"]
+
+[ext_resource type="PackedScene" uid="uid://cf2ke3880klew" path="res://Assets/Environments/Skybox/SunLight.tscn" id="1_d33u3"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_d33u3"]
+ground_color = Color(1.4586968, 1.4586968, 1.4586968, 1)
+
+[sub_resource type="Sky" id="Sky_iex1m"]
+sky_material = SubResource("PhysicalSkyMaterial_d33u3")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_fbpmh"]
+background_mode = 2
+sky = SubResource("Sky_iex1m")
+sky_custom_fov = 64.0
+tonemap_mode = 3
+
+[node name="World" type="Node3D" unique_id=111286172]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1454784070]
+environment = SubResource("Environment_fbpmh")
+
+[node name="Node3D" parent="." unique_id=1627134404 instance=ExtResource("1_d33u3")]
+transform = Transform3D(0.86415076, 0.50307035, 0.01280684, -0.019403728, 0.0078790365, 0.99978065, 0.5028592, -0.86420953, 0.016570114, 0, 3, 0)

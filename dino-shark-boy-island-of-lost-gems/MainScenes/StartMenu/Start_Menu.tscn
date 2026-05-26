@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://by4co6rj02k1d"]
+
+[ext_resource type="Texture2D" uid="uid://bpvxc0mig5bpr" path="res://icon.svg" id="1_g4jeg"]
+[ext_resource type="Texture2D" uid="uid://ckrkd86nshcu2" path="res://MainScenes/StartMenu/StartMenu_Illustration.png" id="1_iqjiq"]
+[ext_resource type="Texture2D" uid="uid://7d4ulv65kp1i" path="res://Assets/Characters/DinoSharkBoy_Character/Baked_Textures/Dino_Shark_Boy_Model_Baked_L_Eyeball_Pupil_Metallic-Baked_L_Eyeball_Pupil_Roughness.png" id="2_ihla8"]
+[ext_resource type="Texture2D" uid="uid://byeqg8xeetgyq" path="res://Assets/Characters/DinoSharkBoy_Character/Baked_Textures/Dino_Shark_Boy_Model_Baked_L_Eyeball_Color_Diffuse.png" id="3_iqjiq"]
+
+[node name="Control" type="Control" unique_id=371771725]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=21979476]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_iqjiq")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1842940609]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+alignment = 1
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="VBoxContainer" unique_id=1705851432]
+layout_mode = 2
+size_flags_vertical = 3
+ratio = 0.001
+
+[node name="ButtonMarginContainer" type="MarginContainer" parent="VBoxContainer/AspectRatioContainer" unique_id=1368942550]
+custom_minimum_size = Vector2(550, 650)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+size_flags_stretch_ratio = 0.0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/AspectRatioContainer/ButtonMarginContainer" unique_id=1339025146]
+custom_minimum_size = Vector2(450, 550)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/AspectRatioContainer/ButtonMarginContainer/PanelContainer" unique_id=1495468431]
+layout_mode = 2
+split_offsets = PackedInt32Array(0, 0)
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/AspectRatioContainer/ButtonMarginContainer/PanelContainer/VSplitContainer" unique_id=121016106]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 6
+texture_normal = ExtResource("1_g4jeg")
+texture_pressed = ExtResource("2_ihla8")
+texture_hover = ExtResource("3_iqjiq")
+stretch_mode = 5
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/AspectRatioContainer/ButtonMarginContainer/PanelContainer/VSplitContainer" unique_id=2135689165]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 6
+texture_normal = ExtResource("1_g4jeg")
+texture_pressed = ExtResource("2_ihla8")
+texture_hover = ExtResource("3_iqjiq")
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/AspectRatioContainer/ButtonMarginContainer/PanelContainer/VSplitContainer" unique_id=907681430]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 6
+texture_normal = ExtResource("1_g4jeg")
+texture_pressed = ExtResource("2_ihla8")
+texture_hover = ExtResource("3_iqjiq")
+stretch_mode = 5
+
+[node name="TitleMarginContainer" type="MarginContainer" parent="VBoxContainer/AspectRatioContainer" unique_id=1479923185]
+custom_minimum_size = Vector2(750, 450)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/AspectRatioContainer/TitleMarginContainer" unique_id=30971529]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Rich Text Label"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

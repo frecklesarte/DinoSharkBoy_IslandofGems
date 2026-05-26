@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bfmavtb0ojxkf"]
+
+[ext_resource type="Script" uid="uid://del1of6omxvg8" path="res://Assets/Environments/Skybox/player_3d.gd" id="1_3pma4"]
+[ext_resource type="PackedScene" uid="uid://cxa8yyu5j3j7l" path="res://Assets/Characters/DinoSharkBoy_Character/DinoSharkBoyCharacter.tscn" id="1_5la42"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3pma4"]
+margin = 0.01
+radius = 0.3491211
+height = 1.6195679
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_3pma4"]
+
+[node name="Player3D" type="CharacterBody3D" unique_id=1386612451]
+floor_constant_speed = true
+safe_margin = 0.01
+script = ExtResource("1_3pma4")
+
+[node name="Dino_Shark_Boy_Model" parent="." unique_id=120764740 instance=ExtResource("1_5la42")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1779955909]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.8342163, 0)
+shape = SubResource("CapsuleShape3D_3pma4")
+debug_color = Color(8.595438, 12.426777, 0, 0.41960785)
+
+[node name="Camera_pivot" type="Node3D" parent="." unique_id=1919291523]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 0.9917586, -0.12812056, 0, 0.12812056, 0.9917586, 0, 1.5699413, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Camera_pivot" unique_id=922610747]
+transform = Transform3D(1, -1.1200655e-08, 1.7412506e-07, -3.341734e-08, 0.96717024, 0.2541293, -1.7125497e-07, -0.2541293, 0.96717024, 0, 0.12812054, 0.9917586)
+shape = SubResource("SphereShape3D_3pma4")
+spring_length = 10.0
+margin = 0.5
+
+[node name="Camera3D" type="Camera3D" parent="Camera_pivot/SpringArm3D" unique_id=1370644261]
+unique_name_in_owner = true
+keep_aspect = 0
+v_offset = 0.305

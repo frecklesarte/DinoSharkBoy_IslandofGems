@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cky3htjmlxdnc"]
+
+[ext_resource type="PackedScene" uid="uid://bpmmhcanhaxo2" path="res://Assets/Environments/Structures/PrototypeKit_ScaleToGodot.001/prototype_level_001.tscn" id="1_ybmw1"]
+[ext_resource type="PackedScene" uid="uid://bce8vjhsfkjh4" path="res://Assets/Environments/Skybox/world.tscn" id="3_aj3je"]
+[ext_resource type="PackedScene" uid="uid://bfmavtb0ojxkf" path="res://Assets/Characters/DinoSharkBoy_Character/player_3d.tscn" id="3_ldcld"]
+
+[node name="Main3D" type="Node3D" unique_id=1982063516]
+
+[node name="Prototype_Level_001" parent="." unique_id=76499174 instance=ExtResource("1_ybmw1")]
+
+[node name="World" parent="." unique_id=111286172 instance=ExtResource("3_aj3je")]
+
+[node name="Player3D" parent="." unique_id=1386612451 instance=ExtResource("3_ldcld")]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://by4co6rj02k1d"]
+
+[ext_resource type="Script" uid="uid://coqkv3te8dwmd" path="res://ExitApplicationButton.gd" id="1_wrxjg"]
+
+[sub_resource type="Theme" id="Theme_4o0td"]
+
+[node name="Control" type="Control" unique_id=371771725]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=1705851432]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Button" type="Button" parent="AspectRatioContainer" unique_id=1469646452]
+layout_mode = 2
+theme = SubResource("Theme_4o0td")
+button_mask = 2
+text = "Press Enter to exit."
+icon_alignment = 1
+script = ExtResource("1_wrxjg")
