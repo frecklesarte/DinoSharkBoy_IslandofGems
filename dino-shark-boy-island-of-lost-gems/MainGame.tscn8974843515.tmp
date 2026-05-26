@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cky3htjmlxdnc"]
+
+[ext_resource type="PackedScene" uid="uid://bpmmhcanhaxo2" path="res://prototype_level_001.tscn" id="2_e3m3f"]
+[ext_resource type="PackedScene" uid="uid://b5dsw8la7kjth" path="res://Camera3D.tscn" id="3_ws5ob"]
+[ext_resource type="PackedScene" uid="uid://cxa8yyu5j3j7l" path="res://DinoSharkBoyCharacter.tscn" id="4_8qpgq"]
+[ext_resource type="PackedScene" uid="uid://cf2ke3880klew" path="res://SunLight.tscn" id="4_bqqt8"]
+[ext_resource type="Script" uid="uid://c30di23478jyf" path="res://dino_shark_boy_character.gd" id="5_8qpgq"]
+
+[node name="Node3D" type="Node3D" unique_id=1982063516]
+
+[node name="PrototypeLevel_Instance" parent="." unique_id=76499174 instance=ExtResource("2_e3m3f")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="Camera_Instance" parent="." unique_id=2026457122 instance=ExtResource("3_ws5ob")]
+transform = Transform3D(-1, 0, -8.940697e-08, -2.3140226e-08, 0.9659258, 0.25881904, 8.63605e-08, 0.25881904, -0.9659258, 0, 2.2009218, -3)
+
+[node name="Node3D" parent="." unique_id=1627134404 instance=ExtResource("4_bqqt8")]
+
+[node name="Dino_Shark_Boy_Model" parent="." unique_id=120764740 instance=ExtResource("4_8qpgq")]
+script = ExtResource("5_8qpgq")
