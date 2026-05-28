@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Dino Shark Boy Island of Lost Gems"
+config/version="0.0.1"
 run/main_scene="uid://cky3htjmlxdnc"
-config/features=PackedStringArray("4.6", "mobile")
+config/features=PackedStringArray("4.6")
 boot_splash/stretch_mode=2
 config/icon="res://icon.svg"
 
