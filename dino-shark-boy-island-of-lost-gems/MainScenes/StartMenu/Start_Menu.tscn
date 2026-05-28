@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://by4co6rj02k1d"]
 
-[ext_resource type="Texture2D" uid="uid://bpvxc0mig5bpr" path="res://icon.svg" id="1_g4jeg"]
-[ext_resource type="Texture2D" uid="uid://ckrkd86nshcu2" path="res://MainScenes/StartMenu/StartMenu_Illustration.png" id="1_iqjiq"]
-[ext_resource type="Texture2D" uid="uid://7d4ulv65kp1i" path="res://Assets/Characters/DinoSharkBoy_Character/Baked_Textures/Dino_Shark_Boy_Model_Baked_L_Eyeball_Pupil_Metallic-Baked_L_Eyeball_Pupil_Roughness.png" id="2_ihla8"]
+[ext_resource type="Texture2D" uid="uid://xa7r3pkhusef" path="res://icon.svg" id="1_g4jeg"]
+[ext_resource type="Texture2D" uid="uid://djqwj6xw4g5wb" path="res://MainScenes/StartMenu/StartMenu_Illustration.002.png" id="1_iqjiq"]
+[ext_resource type="Texture2D" uid="uid://7d4ulv65kp1i" path="res://Assets/Characters/DinoSharkBoy_Character/Dino_Shark_Boy_Model_Baked_L_Eyeball_Pupil_Metallic-Baked_L_Eyeball_Pupil_Roughness.png" id="2_ihla8"]
 [ext_resource type="Texture2D" uid="uid://byeqg8xeetgyq" path="res://Assets/Characters/DinoSharkBoy_Character/Baked_Textures/Dino_Shark_Boy_Model_Baked_L_Eyeball_Color_Diffuse.png" id="3_iqjiq"]
 
 [node name="Control" type="Control" unique_id=371771725]
