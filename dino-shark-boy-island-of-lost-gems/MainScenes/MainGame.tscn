@@ -6,8 +6,9 @@
 
 [node name="Main3D" type="Node3D" unique_id=1982063516]
 
-[node name="Prototype_Level_001" parent="." unique_id=76499174 instance=ExtResource("1_ybmw1")]
-
 [node name="World" parent="." unique_id=111286172 instance=ExtResource("3_aj3je")]
 
 [node name="Player3D" parent="." unique_id=1386612451 instance=ExtResource("3_ldcld")]
+
+[node name="Node3D" parent="." unique_id=76499174 instance=ExtResource("1_ybmw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)

@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var speed: float = 5.0
 @export var jump_velocity: float = 4.5
-@export var mouse_sensitivity: float = 0.6
+@export var mouse_sensitivity: float = 0.4
 @export var spring_arm_length: float = 10
 
 @onready var camera_pivot: Node3D = $Camera_pivot

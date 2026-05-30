@@ -1,51 +1,30 @@
 [gd_scene format=3 uid="uid://bpmmhcanhaxo2"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jqyhn"]
+[ext_resource type="PackedScene" uid="uid://bg8vbnlyfus3s" path="res://Assets/Environments/Structures/PrototypeKit.002/anvil_export_temp.tscn" id="1_jcbeb"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_48ix2"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jcbeb"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ydbje"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_jcbeb"]
+size = Vector3(2, 6, 2)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lja6w"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cm3b"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7n1n8"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_0qvfl"]
+size = Vector3(1, 0.5, 1)
 
 [node name="Node3D" type="Node3D" unique_id=76499174]
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=151451937]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
-disable_mode = 1
-physics_material_override = SubResource("PhysicsMaterial_jqyhn")
-freeze = true
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2007209359]
+physics_material_override = SubResource("PhysicsMaterial_jcbeb")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="RigidBody3D" unique_id=1815187421]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.49999997, -0.5)
-use_collision = true
-size = Vector3(1, 0.2, 1)
-material = SubResource("StandardMaterial3D_48ix2")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1224007712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3, 0)
+shape = SubResource("BoxShape3D_jcbeb")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="RigidBody3D" unique_id=1785541343]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0.3, -100)
-use_collision = true
-size = Vector3(200, 0.2, 200)
-material = SubResource("StandardMaterial3D_ydbje")
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=573040921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_jcbeb")
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="RigidBody3D" unique_id=307732741]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -100.00001, 0.3, -99.99999)
-use_collision = true
-size = Vector3(200, 0.2, 200)
-material = SubResource("StandardMaterial3D_lja6w")
+[node name="Anvil_Export_Temp" parent="StaticBody3D" unique_id=396723021 instance=ExtResource("1_jcbeb")]
 
-[node name="CSGBox3D7" type="CSGBox3D" parent="RigidBody3D" unique_id=846363081]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -100.00001, 0.3, 99.99999)
-use_collision = true
-size = Vector3(200, 0.2, 200)
-material = SubResource("StandardMaterial3D_0cm3b")
-
-[node name="CSGBox3D9" type="CSGBox3D" parent="RigidBody3D" unique_id=26798395]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 100, 0.3, 100)
-use_collision = true
-size = Vector3(200, 0.2, 200)
-material = SubResource("StandardMaterial3D_7n1n8")
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=487450248]
+transform = Transform3D(200, 0, 0, 0, 1, 0, 0, 0, 200, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_0qvfl")
