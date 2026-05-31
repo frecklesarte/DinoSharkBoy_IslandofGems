@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5845gvoejaca"
-path.s3tc="res://.godot/imported/Dino_Shark_Boy_Model_Baked_Teeth_Roughness.png-e1296f61f42114d79c159b39e23fd846.s3tc.ctex"
+uid="uid://dbosxssnppv23"
+path.s3tc="res://.godot/imported/Dino_Shark_Boy_Model_Baked_Spikes_Roughness.png-831596e7c18caf9583a9c7e64f7c3064.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "f27bbf411f20f0973f8775aa9b8cec19"
+"md5": "9ea691f2017564bb103a729a9f2277f8"
 }
 
 [deps]
 
-source_file="res://Assets/Characters/DinoSharkBoy_Character/Dino_Shark_Boy_Model_Baked_Teeth_Roughness.png"
-dest_files=["res://.godot/imported/Dino_Shark_Boy_Model_Baked_Teeth_Roughness.png-e1296f61f42114d79c159b39e23fd846.s3tc.ctex"]
+source_file="res://Assets/Characters/DinoSharkBoy_Character/Dino_Shark_Boy_Model_Baked_Spikes_Roughness.png"
+dest_files=["res://.godot/imported/Dino_Shark_Boy_Model_Baked_Spikes_Roughness.png-831596e7c18caf9583a9c7e64f7c3064.s3tc.ctex"]
 
 [params]
 

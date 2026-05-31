@@ -5,17 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://7d4ulv65kp1i" path="res://Assets/Characters/DinoSharkBoy_Character/Dino_Shark_Boy_Model_Baked_L_Eyeball_Pupil_Metallic-Baked_L_Eyeball_Pupil_Roughness.png" id="2_ihla8"]
 [ext_resource type="Texture2D" uid="uid://byeqg8xeetgyq" path="res://Assets/Characters/DinoSharkBoy_Character/Baked_Textures/Dino_Shark_Boy_Model_Baked_L_Eyeball_Color_Diffuse.png" id="3_iqjiq"]
 
-[sub_resource type="Gradient" id="Gradient_iqjiq"]
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_5n08t"]
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_mgygn"]
-width = 750
-height = 750
-noise = SubResource("FastNoiseLite_5n08t")
-color_ramp = SubResource("Gradient_iqjiq")
-seamless = true
-
 [sub_resource type="BitMap" id="BitMap_fwpx0"]
 
 [node name="Control" type="Control" unique_id=371771725]
@@ -71,7 +60,6 @@ size_flags_vertical = 6
 texture_normal = ExtResource("1_g4jeg")
 texture_pressed = ExtResource("2_ihla8")
 texture_hover = ExtResource("3_iqjiq")
-texture_focused = SubResource("NoiseTexture2D_mgygn")
 texture_click_mask = SubResource("BitMap_fwpx0")
 stretch_mode = 5
 
