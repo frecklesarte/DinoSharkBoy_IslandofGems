@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bg8vbnlyfus3s"]
+
+[ext_resource type="PackedScene" uid="uid://cev1fiyukmvdc" path="res://src/Assets/Environments/Structures/PrototypeKit.002/TileMapsBlockout_LevelDev.001.blend" id="1_i0go2"]
+
+[node name="Anvil_Export_Temp" unique_id=396723021 instance=ExtResource("1_i0go2")]
+
+[node name="Cube" parent="." index="0" unique_id=2041543073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -13)
+
+[node name="LayoutCamera" parent="." index="2" unique_id=2132207678]
+visible = false
+
+[node name="Plane_001" parent="." index="5" unique_id=1362812582]
+visible = false
+
+[node name="Smooth_Corner_Ramp_001" parent="." index="9" unique_id=1803161534]
+visible = false
+
+[node name="Smooth_Corner_Ramp_002" parent="." index="10" unique_id=1739330565]
+visible = false
+
+[node name="Smooth_Corner_Ramp_003" parent="." index="11" unique_id=413438893]
+visible = false

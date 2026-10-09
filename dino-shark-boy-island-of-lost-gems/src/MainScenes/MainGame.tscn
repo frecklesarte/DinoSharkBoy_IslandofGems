@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cky3htjmlxdnc"]
+
+[ext_resource type="PackedScene" uid="uid://bce8vjhsfkjh4" path="res://src/Assets/Environments/Skybox/world.tscn" id="1_2ngcj"]
+[ext_resource type="PackedScene" uid="uid://bfmavtb0ojxkf" path="res://src/Assets/Characters/DinoSharkBoy_Character/player_3d.tscn" id="2_n6hpl"]
+[ext_resource type="PackedScene" uid="uid://bpmmhcanhaxo2" path="res://src/Assets/Environments/Structures/PrototypeKit_ScaleToGodot.001/prototype_level_001.tscn" id="3_ua62l"]
+
+[node name="Main3D" type="Node3D" unique_id=1982063516]
+
+[node name="World" parent="." unique_id=111286172 instance=ExtResource("1_2ngcj")]
+visible = false
+
+[node name="Player3D" parent="." unique_id=1386612451 instance=ExtResource("2_n6hpl")]
+
+[node name="Node3D" parent="." unique_id=76499174 instance=ExtResource("3_ua62l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
